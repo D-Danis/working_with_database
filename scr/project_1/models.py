@@ -1,5 +1,7 @@
+from datetime import datetime
+
 from sqlalchemy.orm import DeclarativeBase
-from sqlalchemy import  Column, Integer, String, ForeignKey, Date, Numeric
+from sqlalchemy import  Column, Integer, String, ForeignKey, DateTime, Numeric
 from sqlalchemy.orm import relationship
 
 
@@ -88,8 +90,8 @@ class BuyStep(Base):
     buy_step_id = Column(Integer, primary_key=True, index=True)
     buy_id = Column(Integer, ForeignKey("buy.buy_id"))
     step_id = Column(Integer, ForeignKey("step.step_id"))
-    date_step_beg = Column(Date)
-    date_step_end = Column(Date)
+    date_step_beg = Column(DateTime, default=datetime.now)
+    date_step_end = Column(DateTime, default=datetime.now, onupdate=datetime.now)
     
     buy = relationship("Buy")
     step = relationship("Step")
