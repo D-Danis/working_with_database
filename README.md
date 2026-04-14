@@ -4,7 +4,7 @@
 
 ---
 
-## 🚀 Возможности
+## Возможности
 
 - Автоматический сбор ссылок на PDF-бюллетени с пагинацией (Selenium)
 - Параллельное скачивание PDF-файлов (ThreadPoolExecutor)
@@ -21,8 +21,7 @@
 ### 1. Клонировать репозиторий
 
 ```bash
-git clone <repo-url>
-cd <project-dir>
+git clone https://github.com/D-Danis/working_with_database.git
 ```
 
 ### 2. Установить зависимости (через `uv`)
@@ -32,6 +31,7 @@ uv sync
 ```
 
 ### 3. Настроить переменные окружения
+
 Создайте файл `.env` в корне проекта:
 
 ```env
@@ -50,7 +50,7 @@ uv run python scr/project_2/main.py
 
 ---
 
-## ⚙️ Конфигурация
+## Конфигурация
 
 | Переменная | Описание |
 |------------|----------|
@@ -62,7 +62,7 @@ uv run python scr/project_2/main.py
 
 ---
 
-## 🧪 Технологии
+## Технологии
 
 - Python 3.12
 - `requests` / `selenium` / `pdfplumber`
