@@ -1,4 +1,4 @@
-# 📊 SPIMEX Trading Results Parser
+# SPIMEX Trading Results Parser
 
 Парсер для автоматического сбора и обработки бюллетеней по итогам торгов с сайта [СПбМТСБ (SPIMEX)](https://spimex.com/markets/oil_products/trades/results/).  
 
