@@ -12,7 +12,7 @@ from logger import logger
 
 
 START_URL = "https://spimex.com/markets/oil_products/trades/results/"
-START_FROM = dt.datetime(2026, 4, 10).date()
+START_FROM = dt.datetime(2023, 1, 1).date()
 
 thread_local = threading.local()
 
